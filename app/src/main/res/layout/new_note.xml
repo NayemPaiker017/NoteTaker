@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueGray"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the title..."
+            android:textSize="18dp"
+            android:background="@drawable/border"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <EditText
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the details..."
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border2"
+            android:textColor="@color/colorBlack"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/menu_more"
+        app:fabSize="normal"
+        android:layout_marginEnd="8dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@mipmap/ic_more_vert_white_24dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/menu_more"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        >
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/cam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="@color/colorBlue"
+            app:fabSize="normal"
+            app:srcCompat="@mipmap/ic_photo_camera_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="@color/colorOrange"
+            app:fabSize="normal"
+            app:srcCompat="@mipmap/ic_email_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/noteList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="@color/colorRed"
+            app:fabSize="normal"
+            app:srcCompat="@mipmap/ic_list_white_24dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:backgroundTint="@color/colorRed"
+            app:fabSize="normal"
+            app:srcCompat="@mipmap/ic_save_white_24dp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
